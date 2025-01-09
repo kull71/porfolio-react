@@ -1,0 +1,27 @@
+#inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+#inicio-content {
+    max-width: 600px;
+}
+
+#inicio-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#inicio-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+#inicio-image {
+    flex: 1;
+    text-align: center;
+}

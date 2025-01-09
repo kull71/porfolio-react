@@ -1,0 +1,105 @@
+header {
+    background-color: #333;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Permite que los elementos se ajusten para pantallas pequeñas */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    /* Ajusta el espacio relativo del contenedor */
+}
+
+.logo {
+    width: 300px;
+    /* Tamaño adecuado para pantallas pequeñas */
+    height: auto;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    flex: 2;
+    /* Aumenta el espacio asignado en pantallas más grandes */
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Permite que los elementos se ajusten automáticamente */
+}
+
+.nav-link {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff9800;
+    /* Color naranja en hover */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    /* Distribuye espacio relativo */
+    justify-content: flex-end;
+}
+
+.social-link {
+    color: #f1f1f1;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #ff9800;
+    /* Color naranja en hover */
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        /* Cambia la dirección para pantallas pequeñas */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 10px;
+        /* Añade espacio entre íconos y otros elementos */
+    }
+
+    .logo {
+        width: 80px;
+        /* Reduce el tamaño del logo para pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-link {
+        font-size: 0.9rem;
+        /* Reduce el tamaño de fuente en pantallas más pequeñas */
+    }
+
+    .social-link {
+        font-size: 1.2rem;
+        /* Ajusta el tamaño de íconos sociales */
+    }
+}
